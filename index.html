@@ -15,9 +15,13 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/styles-adaptiv.css">
   </head>
   <body>
+    
+    
     <!-- HEADER -->
     <header class="header">
       <div class="header-wrap container">
@@ -35,6 +39,7 @@
             </li>
           </ul>
         </nav>
+        
         <address class="contact">
           <ul class="contact-list">
             <li class="contact-info">
@@ -45,11 +50,33 @@
             </li>
           </ul>
         </address>
+         <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
+      
+      
+      
       <!-- HERO -->
-      <section class="hero-bgr">
+      <!-- <section class="hero-bgr">
         <div class="hero container">
           <h1 class="hero-topic">Effective Solutions for Your Business</h1>
           <button
@@ -61,9 +88,12 @@
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
+      
+      
+      
       <!-- VALUES -->
-      <section class="values section">
+      <!-- <section class="values section">
         <div class="values-container container">
           <h2 class="visually-hidden">Our values</h2>
           <ul class="values-list card-set">
@@ -117,9 +147,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+      
+      
       <!-- EXAMPLES WORK -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="examples-work container">
           <h2 class="examples-work-topic section-primary-topic">What are we doing</h2>
           <ul class="examples-work-list card-set">
@@ -149,9 +181,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+      
+      
       <!-- TEAM -->
-      <section class="section-team section values">
+      <!-- <section class="section-team section values">
         <div class="team container">
           <h2 class="team-topic section-primary-topic">Our Team</h2>
           <ul class="team-list card-set">
@@ -327,11 +361,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- ================ Custumers ==================== -->
 
-      <section class="customers section">
+      <!-- <section class="customers section">
         <div class="customers-container container">
           <h2 class="customers-topic section-primary-topic">Customers</h2>
           <ul class="customers-list">
@@ -379,10 +413,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
+    
+    
     <!-- FOOTER -->
-    <footer class="footer-bgr">
+    <!-- <footer class="footer-bgr">
       <div class="footer container">
         <div class="footer-logo">
           <a class="link logo indent-footer-logo" href="./index.html"
@@ -445,9 +481,11 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    
+    
     <!-- Modal window -->
-    <div class="backdrope is-hidden" data-modal>
+    <!-- <div class="backdrope is-hidden" data-modal>
       <div class="modal">
         <button
           type="button"
@@ -519,10 +557,42 @@
           <button class="modal-form-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
     
-
     <!-- /Modal window -->
-    <script src="./modal.js"></script>
+
+    <!-- ================ Mobail menu=============== -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+    <!-- ================ Mobail menu=============== -->
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
