@@ -255,7 +255,7 @@ img {
    
    text-align: center;
     background: var(--sekondory-background);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero-bgr.jpg');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/bgr/hero-bgr.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
