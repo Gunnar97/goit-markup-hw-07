@@ -287,15 +287,19 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-  
+    cursor: pointer;
+    border: none;
     margin: 0;
     padding: 0;
     background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
     outline: none;
   }
+
+.menu-toggle-clous {
+    cursor: pointer;
+    border: 1px solid var(--secondory-color);
+    border-radius: 50%;
+}
 
   .menu-toggle-icons {
     stroke: var(--secondory-color);
@@ -560,7 +564,7 @@ img {
  
    .section-secondary-topic {
         font-family: Roboto;
-        font-size: 36px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: 1.11;
@@ -568,13 +572,29 @@ img {
         text-transform: capitalize;
         color: var(--secondory-color);
    }
+
+   .mobil-tabl-topic{
+    text-align: center;
+   }
+
+   @media only screen and (min-width: 768px) {
+    .mobil-tabl-topic{
+        text-align: start;
+       }
+   }
+
+
+   @media only screen and (max-width: 1157px) {
+      .mobil-tabl-topic{
+        font-size: 36px;
+     }
+   }
  
  
  
  @media only screen and (min-width: 1158px) {
         .section-secondary-topic{
             font-weight: 500;
-            font-size: 20px;
             line-height: 1.2;
             letter-spacing: 0.02em;
             
@@ -600,20 +620,28 @@ img {
  }
  
 
+ .values-list{
+    --items: 1;
+    --card-set-gap:72px;
+ }
 
- @media only screen and (max-width: 767px) {
+
+ @media only screen and (min-width: 768px) {
     .values-list{
-     --items: 1;
-     --card-set-gap:72px;
+     --items: 2;
+     --card-set-gap:24px;
+   }
+}
+
+   .values-list-table {
+        row-gap: 72px;
    }
 
    .values-icons-container{
         display: none;
    }
 
-   .values-topic{
-    text-align: center;
-   }
+   
 
    .values {
     padding-top: 96px;
@@ -632,9 +660,6 @@ img {
         display: none;
    }
 
-   .values-topic{
-        text-align: center;
-   }
 
    .values {
     padding-top: 96px;
@@ -724,6 +749,13 @@ img {
         --card-set-gap: 24px;
     }  
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .team-list{
+        row-gap: 64px;
+    }  
+  
+}
   
 
 
@@ -766,8 +798,18 @@ img {
  .social-mobail {
     justify-content: space-between;
   }
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .team {
+        padding-left: 108px;
+        padding-right: 108px;
+      }
 
- 
+      .customers-container {
+        padding-left: 108px;
+        padding-right: 108px;
+      }
+}
+  
 
  
  .team-paragraf {
