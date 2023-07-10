@@ -972,7 +972,7 @@ img {
     display: block;
     text-align: center;
     margin-right: 0;
-    padding-bottom: 0;
+    padding: 0;
     margin-bottom: 16px;
      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
@@ -1532,6 +1532,7 @@ img {
     row-gap: 16px;
     column-gap: 20px;
     font-size: 16px;
+    margin-bottom: 48px;
     
 }
  
@@ -1563,7 +1564,8 @@ img {
   .btn-list {
       justify-content: center;
       gap: 24px;
-      margin-bottom: 72px;
+      margin-bottom: 64px;
+      min-width: 100%;
   } 
 
   .btn-menu{
@@ -1573,7 +1575,11 @@ img {
   }
 }
 
-
+@media only screen and (min-width: 1158px) {
+   .btn-menu{
+    margin-bottom: 72px;
+  }
+}
 
 
 .btn-menu:hover,
@@ -1590,8 +1596,25 @@ img {
 
 
 .example-list {
-    --items: 3;
+    --items: 1;
     row-gap: 48px
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .example-list {
+        --items: 2;
+        row-gap: 72px
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .example-list {
+        --items: 3;
+        row-gap: 48px
+    }
 }
 
 .example-item-wrape {
